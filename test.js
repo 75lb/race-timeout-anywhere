@@ -19,4 +19,7 @@ async function start () {
   }
 }
 
-start().catch(console.error)
+start().catch(err => {
+  console.error(err)
+  process.exitCode = 1
+})

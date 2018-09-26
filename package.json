@@ -14,10 +14,10 @@
   ],
   "license": "MIT",
   "engines": {
-    "node": ">=6"
+    "node": ">=8"
   },
   "scripts": {
-    "test": "test-runner test/*.js",
+    "test": "npm run dist && node test.js && node --experimental-modules test.mjs",
     "dist": "rollup -c dist/index.config.js"
   },
   "devDependencies": {
