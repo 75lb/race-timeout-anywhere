@@ -1,0 +1,27 @@
+{
+  "name": "race-timeout-anywhere",
+  "author": "Lloyd Brookes <75pound@gmail.com>",
+  "version": "0.0.0",
+  "description": "race-timeout-anywhere",
+  "main": "dist/index.js",
+  "repository": "https://github.com/75lb/race-timeout-anywhere",
+  "keywords": [
+    "promise",
+    "race",
+    "timeout",
+    "isomorphic",
+    "es6"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=6"
+  },
+  "scripts": {
+    "test": "test-runner test/*.js",
+    "dist": "rollup -c dist/index.config.js"
+  },
+  "devDependencies": {
+    "rollup": "^0.66.2",
+    "sleep-anywhere": "^0.1.0"
+  }
+}
