@@ -22,10 +22,10 @@
   ],
   "scripts": {
     "test": "npm run dist && node test.js && node --experimental-modules test.mjs",
-    "dist": "rollup -c dist/index.config.js"
+    "dist": "rollup -f umd -n raceTimeout -o dist/index.js index.mjs"
   },
   "devDependencies": {
-    "rollup": "^0.67.0",
-    "sleep-anywhere": "^1.0.0"
+    "rollup": "^1.21.2",
+    "sleep-anywhere": "^1.1.2"
   }
 }
