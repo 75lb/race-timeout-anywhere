@@ -1,5 +1,5 @@
 const a = require('assert')
-const raceTimeout = require('./')
+const raceTimeout = require('race-timeout-anywhere')
 const sleep = require('sleep-anywhere')
 
 async function start () {
